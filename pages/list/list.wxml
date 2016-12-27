@@ -1,0 +1,24 @@
+<import src="../../template/list/list-template.wxml" />
+
+<view class="swipernews">
+    <swiper autoplay="true" indicator-dots="true" interval="3000">
+        <swiper-item>
+            <image src="/images/news1.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="/images/news2.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="/images/news3.jpg"></image>
+        </swiper-item>
+    </swiper>
+
+    <block wx:for="{{gotData}}" wx:for-item="item" wx:for-index="index" wx:key="postDate">
+        <view data-newsid = "{{item.id}}" bindtap = "onTapToDetail">
+        <!--if data-news-id will be newsId-->
+        <!--if data-newsId will be newsid-->
+            <template is="newsItem" data="{{...item}}"/>
+        </view>
+    </block>
+    
+</view>

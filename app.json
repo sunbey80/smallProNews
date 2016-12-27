@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/list/list",
+    "pages/welcome/welcome",
+    "pages/detail/detail"    
+  ],
+  "window":{
+    "navigationBarBackgroundColor":"#42c432",
+    "navigationBarTextStyle":"#ffffff",
+    "navigationBarTitleText":"News App"
+  }
+}

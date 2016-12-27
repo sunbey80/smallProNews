@@ -1,0 +1,7 @@
+<view class="container">
+    <image src="/images/hd.jpg" class="hdimg"></image>
+    <text>Hello,sunbey</text>
+    <view class="btn" bindtap="onTap">
+        <text>Start</text>
+    </view>
+</view>

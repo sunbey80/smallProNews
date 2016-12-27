@@ -1,0 +1,11 @@
+<view class="newsDetail">
+	<text class="newsTit">{{newsItem.postTit}}</text>
+	<view class="dateColle">
+		<text class="newsDate">{{newsItem.postDate}}</text>
+		<text wx:if="{{collected}}" class="collection cur" bindtap="switchCollected"></text>
+		<text wx:else class="collection" bindtap="switchCollected"></text>
+		<text class="share"></text>
+	</view>
+	<image src="{{newsItem.newsImg}}"></image>
+	<text class="newsDis">{{newsItem.postDis}}</text>
+</view>

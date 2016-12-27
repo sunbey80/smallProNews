@@ -1,0 +1,19 @@
+<template name="newsItem">
+
+	<view class="post-container">
+	    <view class="post-author-date">
+	        <image src="{{authorImg}}"></image>
+	        <text>{{postDate}}</text>
+	    </view>
+	    <text class="post-tit">{{postTit}}</text>
+	    <image src="{{newsImg}}" class="post-img"></image>
+	    <text class="post-dis">{{postDis}}</text>
+	    <view class="post-star-view">
+	        <image src="/images/icons/star.png"></image>
+	        <text>67</text>
+	        <image src="/images/icons/view.png"></image>
+	        <text>89</text>
+	    </view>
+	</view>
+
+</template>
